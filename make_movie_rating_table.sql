@@ -1,0 +1,55 @@
+CREATE DATABASE IF NOT EXISTS 607_hw2;
+
+USE 607_hw2;
+
+CREATE TABLE IF NOT EXISTS movie_ratings (
+  ind_id INT NOT NULL,
+  name VARCHAR(45) NOT NULL,
+  movie_title VARCHAR(45) NOT NULL,
+  movie_rating INT NOT NULL,
+  PRIMARY KEY (ind_id, movie_title)
+);
+
+INSERT INTO movie_ratings (ind_id, name, movie_title, movie_rating)
+VALUES (1, 'liz', 'barbie', 4),
+       (1, 'liz', 'oppenheimer', 4),
+       (1, 'liz', 'murder_mystery_2', 3),
+       (1, 'liz', 'choose_love', 1),
+       (1, 'liz', 'lets_clone_tyrone', 4),
+       (1, 'liz', 'you_people', 5),
+       (2, 'ray', 'barbie', 3),
+       (2, 'ray', 'oppenheimer', 5),
+       (2, 'ray', 'murder_mystery_2', 3),
+       (2, 'ray', 'choose_love', 2),
+       (2, 'ray', 'lets_clone_tyrone', 4),
+       (2, 'ray', 'you_people', 4),
+       (3, 'sam', 'barbie', 5),
+       (3, 'sam', 'oppenheimer', 4),
+       (3, 'sam', 'murder_mystery_2', 4),
+       (3, 'sam', 'choose_love', 3),
+       (3, 'sam', 'lets_clone_tyrone', 1),
+       (3, 'sam', 'you_people', 4),
+       (4, 'tracy', 'barbie', 2),
+       (4, 'tracy', 'oppenheimer', 5),
+       (4, 'tracy', 'murder_mystery_2', 4),
+       (4, 'tracy', 'choose_love', 1),
+       (4, 'tracy', 'lets_clone_tyrone', 5),
+       (4, 'tracy', 'you_people', 3),
+       (5, 'anne', 'barbie', 1),
+       (5, 'anne', 'oppenheimer', 4),
+       (5, 'anne', 'murder_mystery_2', 1),
+       (5, 'anne', 'choose_love', 5),
+       (5, 'anne', 'lets_clone_tyrone', 5),
+       (5, 'anne', 'you_people', 4),
+       (6, 'anthony', 'barbie', 5),
+       (6, 'anthony', 'oppenheimer', 4),
+       (6, 'anthony', 'murder_mystery_2', 2),
+       (6, 'anthony', 'choose_love', 2),
+       (6, 'anthony', 'lets_clone_tyrone', 4),
+       (6, 'anthony', 'you_people', 2),
+       (7, 'alex', 'barbie', 1),
+       (7, 'alex', 'oppenheimer', 1),
+       (7, 'alex', 'murder_mystery_2', 3),
+       (7, 'alex', 'choose_love', 2),
+       (7, 'alex', 'lets_clone_tyrone', 5),
+       (7, 'alex', 'you_people', 3);
